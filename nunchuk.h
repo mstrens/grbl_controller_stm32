@@ -10,16 +10,15 @@
 #define NUNCHUK_H
 
 #include <Wire.h>
-             
-void nunchuk_init() ;
-uint8_t nunchuk_read() ;
 
-uint8_t nunchuk_buttonZ() ;
+void nunchuk_init();
+uint8_t nunchuk_read();
 
-uint8_t nunchuk_buttonC() ;
-void handleNunchuk (void) ;
+uint8_t nunchuk_buttonZ();
 
-void disableEncription() ;
+uint8_t nunchuk_buttonC();
+void handleNunchuk(void);
 
+void disableEncription();
 
 #endif
