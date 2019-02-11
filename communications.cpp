@@ -208,7 +208,7 @@ void handleLastNumericField(void) { // decode last numeric field
           strGrblIdx = 0 ; 
   } else if (  getGrblPosState == GET_GRBL_STATUS_WCO_DATA && wcoIdx < 3) {
           wcoXYZ[wcoIdx] = temp ;
-          mposXYZ[wposIdx] = wposXYZ[wposIdx] + wcoXYZ[wposIdx] ;
+          mposXYZ[wcoIdx] = wposXYZ[wcoIdx] + wcoXYZ[wcoIdx] ;
           wcoIdx++ ;
           strGrblIdx = 0 ;
   } 

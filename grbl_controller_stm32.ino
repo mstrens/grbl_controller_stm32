@@ -27,6 +27,7 @@ char lcdTxt[MAX_LCD_ROWS][23] ; // 22 car per line + "\0"; utilisé dans la cons
 
 uint8_t sdStatus =  SD_STATUS_NO_CARD ;
 SdFat sd1(1); // use SPI 1 hardware (stm32f103 has 2 spi)
+//SdFat sd1;
 SdFile file ;
 SdFile curDir ;
 uint16_t sdFileDirCnt = 0 ;
