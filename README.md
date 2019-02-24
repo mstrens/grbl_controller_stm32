@@ -30,3 +30,8 @@ Optionnally you can connect a Nunchuck in order to move the X, Y, Z, axis with t
 The pins being used are defined in the config.h file
 Current pins have been selected to make an easy connection with the display module
   Pins are in the same sequence as the wires from the cable to the display. 
+
+Important note: in order to compile this project, you have to add the library SdFat to your arduino IDE.
+You must edit the file SdFatConfig.h (normally in folder documents/arduino/librairies/sdFat/src).
+In line 78 you must set the parameter to "0"; so you must have
+#define USE_STANDARD_SPI_LIBRARY 0
